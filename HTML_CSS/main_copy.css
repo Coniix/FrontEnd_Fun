@@ -1,0 +1,224 @@
+@font-face {
+    font-family: myFont;
+    src: url(BeautyMountains.ttf);
+}
+
+@font-face {
+    font-family: myOtherFont;
+    src: url(Aloevera.ttf);
+}
+
+* {
+    font-family: myOtherFont;
+}
+
+h1 {
+    font-family: myFont;
+    color: #e76f51;
+}
+
+h2 {
+    font-family: myOtherFont;
+    color: #e76f51;
+}
+
+h3 {
+    color: #e9c46a;
+}
+
+#footer {
+    text-align: center;
+}
+
+img{
+    border-radius: 5%;
+}
+
+.emoji{
+    color: #48cae4;
+}
+
+.emojiRage{
+    color: #ef233c;
+    transition: all 200ms ease-out;
+}
+
+.emojiRage:hover{
+    color: #ef233c;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px white;
+    transition: all 200ms ease-out;
+}
+
+td{
+    text-align: center;
+}
+
+svg {
+    float: left;
+    margin: 20px;
+}
+
+#buttons{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+.formText{
+    font-family: Verdana;
+}
+
+.toggle-el {
+    padding: 2rem;
+    height: 240px;
+    background: white;
+    transition: all 0.2s ease;
+    opacity: 1;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+input[type=checkbox].hide-input:not(:checked) + .toggle-el {
+    height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input.hide-input {
+    position: absolute;
+    left: -999em;
+}
+
+label.toggle {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    color: #242424;
+    background: #219ebc;
+    border-radius: 15px;
+    user-select: none;
+    margin-top: 2px
+}
+
+button.toggle {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    color: #242424;
+    background: #219ebc;
+    border-radius: 15px;
+    user-select: none;
+    margin-top: 2px;
+    border: none;
+}
+
+button {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    color: #242424;
+    background: #0ead69;
+    border-radius: 15px;
+    user-select: none;
+    margin-top: 2px
+}
+
+ul {
+    list-style-image: url('turtle.png');
+}
+
+svg:hover{
+    animation-name: svg;
+    animation-duration: 10s;
+}
+
+@keyframes svg {
+    from {transform: scale(1) rotate(0deg);}
+    to {transform: scale(1.5) rotate(1360deg);}
+}
+
+/* body{
+   
+    animation-name: body;
+    animation-duration: 20s;
+} 
+  
+@keyframes body {
+    from {transform: translate(150%, 0%);}
+
+} */
+
+#RDJ-container{
+    align-items: center;
+}
+
+.RDJ-Text{
+    text-align: center;
+}
+
+#RDJ{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#RDJ:hover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: RDJ;
+    animation-duration: 5s;
+}
+
+@keyframes RDJ {
+    from {scale: 1;}
+    to {scale: 1.5;}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#RDJHover:hover{
+    position: relative;
+    bottom: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: RDJHover;
+    animation-duration: 5s;
+}
+@keyframes RDJHover {
+    from {opacity:0;}
+    to {opacity:1;}
+    from {width: 30%;}
+    to {width: 50%;}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-180deg);}
+} 
+
+.table-text{
+    text-align: right;
+}
+
+table{
+    align-items: right;
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+#scalable-text{
+    width: 300px;
+    transform-origin: center left;
+    transform: rotate(-30deg);
+    position: relative;
+    left: 100px;
+}
